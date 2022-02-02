@@ -14,10 +14,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Notifications
-import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
@@ -180,6 +177,14 @@ fun TopBar(scope:CoroutineScope, scaffoldState: ScaffoldState) {
                          }) {
                              Icon(Icons.Filled.Menu,"")
                          }
+        },
+        actions = {
+            IconButton(onClick = { /*TODO*/ }) {
+                Icon(Icons.Filled.Search, "Search")
+            }
+            IconButton(onClick = { /*TODO*/ }) {
+                Icon(Icons.Filled.Settings, "Settings")
+            }
         },
 
         backgroundColor = colorResource(id = R.color.purple_200),
